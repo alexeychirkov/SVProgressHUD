@@ -88,6 +88,10 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setCornerRadius:(CGFloat)cornerRadius;                          // default is 14 pt
 + (void)setBorderColor:(nonnull UIColor*)color;                         // default is nil
 + (void)setBorderWidth:(CGFloat)width;                                  // default is 0
++ (void)setShadowColor:(nonnull UIColor*)color;                         // default is an nil
++ (void)setShadowOffset:(CGSize)size;                                   // default is CGSizeZero
++ (void)setShadowOpacity:(float)opacity;                                // default is 0.0
++ (void)setShadowRadius:(CGFloat)radius;                                // default is 0.0
 + (void)setFont:(nonnull UIFont*)font;                                  // default is [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
 + (void)setForegroundColor:(nonnull UIColor*)color;                     // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
 + (void)setForegroundImageColor:(nullable UIColor*)color;               // default is nil == foregroundColor, only used for SVProgressHUDStyleCustom
